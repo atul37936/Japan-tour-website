@@ -172,7 +172,6 @@ export default function Footer() {
               </a>
             ))}
           </div>
-          </div>
         </div>
 
         <div className="mt-8 text-center text-xs text-mouse/60 tracking-wider font-light">
