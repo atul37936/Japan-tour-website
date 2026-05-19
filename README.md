@@ -1,73 +1,44 @@
-# React + TypeScript + Vite
+# 🌸 Japan Tours - Cinematic Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, scroll-driven travel landing page featuring advanced parallax, layer masking techniques, and a cinematic editorial aesthetic. 
 
-Currently, two official plugins are available:
+This project was built to deliver a highly immersive frontend experience, focusing heavily on scroll-linked animations, typography-driven layouts, and buttery-smooth performance.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **🏔️ Advanced Parallax Depth:** The hero section uses CSS mask-image techniques combined with GSAP to sandwich the "JAPAN" display text *between* the background sky and the foreground mountains. 
+- **🎬 Cinematic Motion:** Staggered timeline reveals that trigger as they enter the viewport, creating a "page-turning" editorial feel.
+- **💨 Buttery Smooth Scrolling:** Powered by Lenis for a premium, frictionless scroll experience.
+- **✨ Custom WebGL Particles:** A lightweight React Three Fiber setup for floating ambient particles.
+- **🖱️ Custom Interactions:** Interactive polaroid cards with 3D-like hover states and a custom cursor that reacts to interactive elements.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Framework:** React 19 (via Vite)
+- **Styling:** Tailwind CSS
+- **Animation:** GSAP (ScrollTrigger)
+- **Smooth Scroll:** Lenis
+- **3D/Canvas:** React Three Fiber & Three.js
+- **Icons:** Lucide React
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Quick Start
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+To run this project locally:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1. **Clone the repository** (or download the files)
+2. **Navigate into the project folder:**
+   ```bash
+   cd app
+   ```
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+5. Open `http://localhost:3000` in your browser.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🤝 Contributing
+Feel free to fork this repository and use it as a starting point for your own cinematic landing pages!

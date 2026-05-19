@@ -198,31 +198,30 @@ export default function Hero() {
         />
       </div>
 
-      {/* Cherry Blossom Branches - right edge */}
-      <div className="absolute z-[5] right-0 top-[10%] w-[20vw] max-w-[250px] pointer-events-none hidden md:block">
-        <img
-          src="/images/cherry-branches.png"
-          alt="Cherry blossom branches"
-          className="w-full h-auto object-contain"
-          loading="eager"
-        />
+      {/* Cherry Blossom Branches - right edge (visually covering icons) */}
+      <div 
+        className="absolute z-[20] right-[-4vw] top-[20%] w-[35vw] max-w-[450px] hidden md:block"
+        style={{
+          WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 20%)',
+          maskImage: 'linear-gradient(to right, transparent 0%, black 20%)'
+        }}
+      >
+        <div 
+          style={{
+            WebkitMaskImage: 'linear-gradient(to top, transparent 0%, black 15%)',
+            maskImage: 'linear-gradient(to top, transparent 0%, black 15%)'
+          }}
+        >
+          <img
+            src="/images/cherry-branches.png"
+            alt="Cherry blossom branches"
+            className="w-full h-auto object-contain"
+            loading="eager"
+          />
+        </div>
       </div>
 
-      {/* Social Icons - right edge vertical */}
-      <div
-        ref={socialsRef}
-        className="absolute z-[5] right-6 top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-4"
-      >
-        {[Instagram, Facebook, Send].map((Icon, i) => (
-          <a
-            key={i}
-            href="#"
-            className="text-kimono/30 hover:text-kimono transition-colors duration-300"
-          >
-            <Icon className="w-5 h-5" strokeWidth={1} />
-          </a>
-        ))}
-      </div>
+      {/* Social Icons removed to prevent them from showing through the transparent gaps of the cherry blossoms */}
 
       {/* Polaroid Card Strip — with hover states */}
       <div
