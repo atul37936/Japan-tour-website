@@ -268,8 +268,9 @@ export default function Hero() {
       {/* Book Button - hero position */}
       <button
         onClick={() => scrollTo('#contact')}
-        className="absolute z-[5] right-[12vw] bottom-[15vh] hidden md:block px-10 py-4 rounded-full text-small-caps text-cream tracking-[0.12em] border border-cream/30 bg-cream/[0.15] backdrop-blur-xl hover:bg-gradient-to-t hover:from-lime hover:to-lime/20 hover:text-mist hover:border-lime/50 transition-all duration-400"
+        className="absolute z-[30] right-[12vw] bottom-[15vh] hidden md:block px-10 py-4 rounded-full text-small-caps text-cream tracking-[0.12em] border border-cream/30 bg-cream/[0.15] backdrop-blur-xl hover:bg-gradient-to-t hover:from-lime hover:to-lime/20 hover:text-mist hover:border-lime/50 transition-all duration-400"
         style={{ backdropFilter: 'blur(12px)' }}
+        data-cursor-expand
       >
         Book
       </button>
