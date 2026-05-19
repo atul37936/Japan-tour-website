@@ -174,7 +174,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 text-left text-xs text-mouse/60 tracking-wider font-light">
+        <div className="mt-8 text-center text-xs text-mouse/60 tracking-wider font-light">
           Created by Atul Mishra
         </div>
       </div>
